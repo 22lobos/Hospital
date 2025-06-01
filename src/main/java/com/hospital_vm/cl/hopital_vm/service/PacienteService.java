@@ -14,4 +14,21 @@ import java.util.List;
 
 public class PacienteService {
     
+
+ private PacienteRepository pacienteRepository ;
+
+ public List<Paciente> findAll(){
+        return pacienteRepository.findAll();
+
+
+ }
+
+ public Paciente  finById(long id) {
+    return pacienteRepository.findById(id).get();
+            
+ }
+
+
+
+   
 }
