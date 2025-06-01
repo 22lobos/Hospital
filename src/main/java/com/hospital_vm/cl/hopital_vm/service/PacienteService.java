@@ -32,5 +32,8 @@ public Paciente save(Paciente paciente ){
     return pacienteRepository.save(paciente);
 }
 
+public void delete(long id) {
+    pacienteRepository.deleteById(id);
    
+}
 }
