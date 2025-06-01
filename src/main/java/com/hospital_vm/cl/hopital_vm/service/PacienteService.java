@@ -28,7 +28,9 @@ public class PacienteService {
             
  }
 
-
+public Paciente save(Paciente paciente ){
+    return pacienteRepository.save(paciente);
+}
 
    
 }
