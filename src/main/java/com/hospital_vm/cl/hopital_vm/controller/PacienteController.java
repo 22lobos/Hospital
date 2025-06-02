@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/pacientes") // <-- ruta correcta con "s"
+@RequestMapping("/api/v1/pacientes") // <-- ruta correcta con "s"
 public class PacienteController {
 
     @Autowired
