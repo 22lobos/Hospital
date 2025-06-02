@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 
 
 
-
+@Repository
 public interface PacienteRepository extends JpaRepository<Paciente, Long> {
     
     @Query("SELECT p FROM Paciente p WHERE p.nombre = :apellido")
