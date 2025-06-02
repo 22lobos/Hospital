@@ -26,7 +26,8 @@ public interface PacienteRepository extends JpaRepository<Paciente, Long> {
     List<Paciente> buscaPorCorreo(@Param("correo") String correo);
 
 
-    List<Paciente> finByNombreApellidos(String nombre, String apellidos); 
+     List<Paciente> findByNombreAndApellido(String nombre, String apellido);
+
 
     
 }
